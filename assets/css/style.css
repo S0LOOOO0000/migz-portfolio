@@ -1,0 +1,65 @@
+body {
+    background-color: #0b0f19;
+    color: #f1f5f9;
+    font-family: 'Outfit', 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Custom Glowing Background Gradients */
+.bg-glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.25;
+}
+
+.glass-nav {
+    background: rgba(11, 15, 25, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.card-glow {
+    box-shadow: 0 10px 30px -10px rgba(6, 182, 212, 0.05);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-glow:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px -15px rgba(139, 92, 246, 0.25);
+    border-color: rgba(139, 92, 246, 0.4);
+}
+
+/* Title Overlay Gradient for Full-Cover Graphic Cards */
+.title-overlay-gradient {
+    background: linear-gradient(to top, rgba(11, 15, 25, 0.95) 15%, rgba(11, 15, 25, 0.6) 65%, transparent 100%);
+}
+
+.fade-in-up-title {
+    transform: translateY(0);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-card:hover .fade-in-up-title {
+    transform: translateY(-2px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0b0f19;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8b5cf6;
+}
